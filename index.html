@@ -81,7 +81,7 @@
         </script>
     </div>
 
-    <div class="glass-card w-full max-w-md p-8 mb-6">
+    <div class="glass-card w-full max-w-5xl p-3.5 sm:p-6 mb-8">
         <h1 class="text-3xl font-extrabold text-center text-gray-800 mb-2">자취생 냉장고 수명 알리미</h1>
         <p class="text-center text-gray-600 mb-8">자취생을 위한 식재료 유통기한 D-Day 계산 및 알리미입니다.</p>
         
@@ -144,7 +144,7 @@
   }
 </style>
 
-<div class="max-w-md mx-auto my-6 px-4">
+<div class="w-full mx-auto">
   <!-- 메인 카드 데크 -->
   <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-3xl shadow-xl border border-slate-200/50">
     
@@ -164,7 +164,11 @@
       </div>
     </div>
 
-    <!-- 식재료 입력 폼 -->
+    <!-- 2-COLUMN RESPONSIVE GRID -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+      <!-- LEFT COLUMN: INPUT FORM & TIPS (5 COLS) -->
+      <div class="lg:col-span-5 space-y-5">
+        <!-- 식재료 입력 폼 -->
     <div class="bg-white p-5 rounded-2xl border border-slate-200/60 shadow-sm mb-6">
       <h2 class="text-sm font-bold text-slate-700 mb-3.5 flex items-center gap-2">
         <span class="w-1.5 h-3.5 bg-emerald-500 rounded-full inline-block"></span>
@@ -206,7 +210,25 @@
       </div>
     </div>
 
-    <!-- 현재 냉장고 품목 목록 -->
+          <!-- 식재료 보관 꿀팁 박스 -->
+        <div class="bg-white/80 p-4 rounded-2xl border border-slate-200/70 text-xs text-slate-600 space-y-2">
+          <span class="font-bold text-emerald-700 flex items-center gap-1 text-sm">
+            💡 소비기한 vs 유통기한 상식
+          </span>
+          <p class="leading-relaxed">2023년부터 계도된 <strong>소비기한</strong>은 보관 방법을 준수했을 때 섭취해도 안전한 기한입니다. D-Day 전에 빠르게 소진하세요!</p>
+        </div>
+
+        <div class="p-4 bg-white/70 rounded-xl border border-slate-200 text-center">
+          <p class="text-xs text-slate-600 font-medium mb-2">자취생 냉장고 절약 꿀팁 가이드북</p>
+          <a href="guides/guide1.html" class="inline-block w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold rounded-lg transition text-center">
+            📖 식재료 낭비 제로 가이드 보기
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: INVENTORY & RECEIPT (7 COLS, STICKY ON PC) -->
+      <div class="lg:col-span-7 space-y-5 lg:sticky lg:top-6">
+        <!-- 현재 냉장고 품목 목록 -->
     <div class="mb-6">
       <div class="flex justify-between items-center mb-3">
         <h3 class="text-sm font-extrabold text-slate-700 flex items-center gap-1.5">
@@ -298,6 +320,8 @@
       </div>
     </div>
 
+      </div>
+    </div>
   </div>
 </div>
 
@@ -604,7 +628,7 @@
         </script>
     </div>
 
-<footer class="w-full max-w-md text-center pb-8 text-sm text-gray-700/80">
+<footer class="w-full max-w-4xl text-center pb-8 text-sm text-gray-700/80">
         <div class="flex justify-center items-center gap-4 mb-3">
             <a href="terms.html" class="hover:text-gray-900 transition font-medium">이용약관</a>
             <span class="text-gray-400 text-xs">|</span>
