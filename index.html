@@ -358,16 +358,28 @@
   // 초기 날짜 인풋 세팅 (오늘 기준으로 자동 입력)
   document.getElementById('expiryDate').value = getOffsetDate(5);
 
-  // 디데이 계산 엔진
+  // XSS 방어용 HTML 엔티티 이스케이프
+  function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  // 디데이 계산 엔진 (손상/비정상 날짜 NaN 방어)
   function calculateDDay(expiryDateStr) {
+    if (!expiryDateStr) return NaN;
     const today = new Date();
     today.setHours(0,0,0,0);
     const target = new Date(expiryDateStr);
+    if (isNaN(target.getTime())) return NaN;
     target.setHours(0,0,0,0);
     
     const diffTime = target - today;
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    return diffDays;
+    return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
   }
 
   // 영수증 난수 발급 및 날짜 표시
@@ -452,7 +464,11 @@
       let badgeText = '';
       let borderClass = 'border-slate-100';
 
-      if (dDay < 0) {
+      if (isNaN(dDay)) {
+        badgeClass = 'bg-slate-100 text-slate-500 border-slate-200';
+        badgeText = '날짜오류';
+        borderClass = 'border-slate-200';
+      } else if (dDay < 0) {
         badgeClass = 'bg-rose-50 text-rose-600 border-rose-100';
         badgeText = `D+${Math.abs(dDay)} (만료)`;
         borderClass = 'border-rose-100 hover:border-rose-200';
@@ -470,18 +486,22 @@
         borderClass = 'hover:border-slate-300';
       }
 
+      const safeName = escapeHtml(item.name);
+      const safeCategoryIcon = escapeHtml(item.category.split(' ')[0]);
+      const safeDate = escapeHtml(item.expiryDate);
+
       listContainer.innerHTML += `
         <div class="flex items-center justify-between p-3.5 bg-white rounded-xl border ${borderClass} transition-all duration-150">
           <div class="flex items-center gap-2.5">
-            <span class="text-lg">${item.category.split(' ')[0]}</span>
+            <span class="text-lg">${safeCategoryIcon}</span>
             <div>
-              <h4 class="text-xs font-bold text-slate-700">${item.name}</h4>
-              <p class="text-[10px] font-medium text-slate-400 mt-0.5">${item.expiryDate} 까지</p>
+              <h4 class="text-xs font-bold text-slate-700">${safeName}</h4>
+              <p class="text-[10px] font-medium text-slate-400 mt-0.5">${safeDate} 까지</p>
             </div>
           </div>
           <div class="flex items-center gap-2">
             <span class="text-[11px] font-bold px-2 py-0.5 rounded border ${badgeClass}">${badgeText}</span>
-            <button onclick="deleteFoodItem(${item.id})" class="text-slate-300 hover:text-rose-500 p-1 transition-colors">
+            <button onclick="deleteFoodItem(${Number(item.id)})" class="text-slate-300 hover:text-rose-500 p-1 transition-colors" title="삭제">
               <i class="fa-solid fa-trash-can text-xs"></i>
             </button>
           </div>
@@ -522,7 +542,12 @@
       let statusStyle = 'text-stone-700';
       let dDayDisplay = '';
 
-      if (dDay < 0) {
+      if (isNaN(dDay)) {
+        dangerCount++;
+        statusText = '날짜오류';
+        statusStyle = 'text-slate-500 font-bold';
+        dDayDisplay = 'ERR';
+      } else if (dDay < 0) {
         dangerCount++;
         statusText = '위험/폐기';
         statusStyle = 'text-rose-600 font-bold';
@@ -538,16 +563,16 @@
         dDayDisplay = `D-${dDay}`;
       }
 
-      // 글자수 이쁘게 잘라서 정렬 처리하기
-      const rawName = item.name;
-      const cleanCategory = item.category.split(' ')[1] || '기타';
+      // 글자수 이쁘게 잘라서 정렬 처리하기 및 XSS 이스케이프
+      const rawName = item.name || '';
+      const cleanCategory = (item.category || '').split(' ')[1] || '기타';
       const displayName = rawName.length > 8 ? rawName.slice(0, 8) + '..' : rawName;
-      const combinedName = `${displayName}[${cleanCategory}]`;
+      const combinedName = escapeHtml(`${displayName}[${cleanCategory}]`);
 
       receiptContainer.innerHTML += `
         <div class="grid grid-cols-12 gap-1 font-mono items-center">
           <span class="col-span-6 truncate">${combinedName}</span>
-          <span class="col-span-3 text-center text-[11px]">${dDayDisplay}</span>
+          <span class="col-span-3 text-center text-[11px]">${escapeHtml(dDayDisplay)}</span>
           <span class="col-span-3 text-right text-[10px] ${statusStyle}">${statusText}</span>
         </div>
       `;
@@ -664,18 +689,18 @@
   <!-- Preemptive UX Helper: Auto comma formatting & Result sharing -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Auto comma on number/text inputs with currency hints
-      const moneyInputs = document.querySelectorAll('input[type="text"], input[type="number"], input[inputmode="numeric"]');
+      // Safe Auto comma formatting: ONLY touch currency/amount inputs, NEVER touch text/names
+      const moneyInputs = document.querySelectorAll('input[type="text"], input[inputmode="numeric"]');
       moneyInputs.forEach(input => {
-        // Skip specific inputs like year, month, date, percent, id
         const name = (input.name || input.id || '').toLowerCase();
-        if (name.includes('year') || name.includes('month') || name.includes('day') || name.includes('rate') || name.includes('percent') || name.includes('age') || name.includes('score')) {
+        // Skip food names, text, names, descriptions, titles
+        if (name.includes('food') || name.includes('name') || name.includes('title') || name.includes('memo') || name.includes('desc')) {
           return;
         }
-        
-        // Listen to input
+        const isCurrency = name.includes('price') || name.includes('money') || name.includes('cost') || name.includes('amount') || name.includes('pay') || name.includes('wage');
+        if (!isCurrency) return;
+
         input.addEventListener('input', function(e) {
-          if (this.type === 'number') return; // native number handles own UI
           let val = this.value.replace(/[^0-9]/g, '');
           if (val) {
             this.value = Number(val).toLocaleString('ko-KR');
