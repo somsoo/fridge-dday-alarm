@@ -35,25 +35,58 @@
 <meta content="https://fridge-dday-alarm.enjoy-onepage.com/og-image.png" name="twitter:image"/>
 <!-- JSON-LD 구조화 데이터 (WebApplication Schema) -->
 <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기",
-        "alternateName": "냉장고수명알리미",
-        "url": "https://fridge-dday-alarm.enjoy-onepage.com/",
-        "description": "냉장고 속 식재료의 권장 소비기한과 보관 일수를 계산하여 버려지는 음식물 없이 알뜰하게 소비할 수 있도록 D-Day 신호등으로 알려주는 스마트 냉장고 툴입니다.",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "All",
-        "inLanguage": "ko",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "KRW"
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://fridge-dday-alarm.enjoy-onepage.com/#webapp",
+      "name": "자취생 냉장고",
+      "url": "https://fridge-dday-alarm.enjoy-onepage.com/",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "description": "냉장고 속 식재료의 권장 소비기한과 보관 일수를 계산하여 버려지는 음식물 없이 알뜰하게 소비할 수 있도록 D-Day 신호등으로 알려주는 스마트 냉장고 툴입니다.",
+      "image": "https://fridge-dday-alarm.enjoy-onepage.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW"
       }
-    ]
-    </script>
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://fridge-dday-alarm.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "소비기한이 지난 음식은 무조건 버려야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "개봉하지 않고 적정 냉장 온도를 유지했다면 소비기한 직후라도 냄새/변색이 없을 수 있으나, 어패류나 유제품은 변질 위험이 크므로 폐기를 권장합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "냉동실에 넣으면 영구적으로 보관할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "냉동실도 미생물 증식만 억제할 뿐 지방 산패와 냉동상(Freezer burn)이 진행되므로, 육류는 3~6개월 이내 소비가 권장됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "채소 보관 시 물기를 닦아서 넣어야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 키친타월로 표면 수분을 꼼꼼히 제거하고 밀폐 용기에 보관해야 무름 현상을 방지하고 보관 기간을 2배 이상 늘릴 수 있습니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
         body { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); min-height: 100vh; font-family: 'Pretendard', sans-serif; }
