@@ -1,44 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
-    <!-- Performance Optimization: Resource Preconnect -->
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="index, follow" name="robots"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기</title>
-<meta content="냉장고 식재료의 소비기한과 보관 일수를 계산해 버리는 음식 없이 먹도록 D-Day 신호등으로 알려주는 냉장고 관리 도구입니다." name="description"/>
-<meta content="냉장고 식재료 유통기한, 소비기한 계산기, 자취생 냉장고 관리, 식재료 디데이 알리미, 냉장고 파먹기, 음식물 쓰레기 줄이기, 식자재 보관법" name="keywords"/>
-<link href="https://fridge-dday-alarm.enjoy-onepage.com/" rel="canonical"/>
-<!-- 파비콘 & PWA 매니페스트 -->
-<link href="favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="icon.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-<meta content="#06B6D4" name="theme-color"/>
-<meta content="yes" name="apple-mobile-web-app-capable"/>
-<meta content="냉장고수명알리미" name="apple-mobile-web-app-title"/>
-<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
-<link href='data:application/manifest+json,{"name":"자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기","short_name":"냉장고수명알리미","description":"냉장고 속 식재료의 권장 소비기한과 보관 일수를 계산하여 버려지는 음식물 없이 알뜰하게 소비할 수 있도록 D-Day 신호등으로 알려주는 스마트 냉장고 툴입니다.","start_url":"/","display":"standalone","theme_color":"#06B6D4","background_color":"#0F172A","lang":"ko","icons":[{"src":"https://fridge-dday-alarm.enjoy-onepage.com/icon.png","sizes":"512x512","type":"image/png"}]}' rel="manifest"/>
-<!-- 오픈그래프 (OpenGraph) 메타 태그 -->
-<meta content="website" property="og:type"/>
-<meta content="냉장고수명알리미" property="og:site_name"/>
-<meta content="자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기" property="og:title"/>
-<meta content="냉장고 식재료의 소비기한과 보관 일수를 계산해 버리는 음식 없이 먹도록 D-Day 신호등으로 알려주는 냉장고 관리 도구입니다." property="og:description"/>
-<meta content="https://fridge-dday-alarm.enjoy-onepage.com/" property="og:url"/>
-<meta content="https://fridge-dday-alarm.enjoy-onepage.com/og-image.png" property="og:image"/>
-<meta content="800" property="og:image:width"/>
-<meta content="800" property="og:image:height"/>
-<meta content="ko_KR" property="og:locale"/>
-<!-- 트위터 카드 (Twitter Card) -->
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기" name="twitter:title"/>
-<meta content="냉장고 식재료의 소비기한과 보관 일수를 계산해 버리는 음식 없이 먹도록 D-Day 신호등으로 알려주는 냉장고 관리 도구입니다." name="twitter:description"/>
-<meta content="https://fridge-dday-alarm.enjoy-onepage.com/og-image.png" name="twitter:image"/>
-<!-- JSON-LD 구조화 데이터 (WebApplication Schema) -->
+<meta name="description" content="냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다. 지난 것·3일 안·여유를 나눠 보고, 다 먹은 것과 버린 것을 기록합니다. 기기 안에만 저장, 무료.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://fridge-dday-alarm.enjoy-onepage.com/">
+<meta name="theme-color" content="#059669">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="자취생 냉장고 수명 알리미">
+<meta property="og:title" content="자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기">
+<meta property="og:description" content="냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다. 지난 것·3일 안·여유를 나눠 보고, 다 먹은 것과 버린 것을 기록합니다. 기기 안에만 저장, 무료.">
+<meta property="og:url" content="https://fridge-dday-alarm.enjoy-onepage.com/">
+<meta property="og:image" content="https://fridge-dday-alarm.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기">
+<meta name="twitter:description" content="냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다. 지난 것·3일 안·여유를 나눠 보고, 다 먹은 것과 버린 것을 기록합니다. 기기 안에만 저장, 무료.">
+<meta name="twitter:image" content="https://fridge-dday-alarm.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="자취생 냉장고 수명 알리미 RSS" href="https://fridge-dday-alarm.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://fridge-dday-alarm.enjoy-onepage.com/sitemap.xml">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -46,970 +30,473 @@
     {
       "@type": "WebApplication",
       "@id": "https://fridge-dday-alarm.enjoy-onepage.com/#webapp",
-      "name": "자취생 냉장고",
+      "name": "자취생 냉장고 수명 알리미",
       "url": "https://fridge-dday-alarm.enjoy-onepage.com/",
-      "applicationCategory": "UtilityApplication",
+      "applicationCategory": "LifestyleApplication",
       "operatingSystem": "All",
-      "browserRequirements": "Requires JavaScript. Requires HTML5.",
-      "description": "냉장고 속 식재료의 권장 소비기한과 보관 일수를 계산하여 버려지는 음식물 없이 알뜰하게 소비할 수 있도록 D-Day 신호등으로 알려주는 스마트 냉장고 툴입니다.",
+      "inLanguage": "ko",
+      "description": "냉장고·냉동실 식재료를 포장지의 날짜와 함께 적어 두면 날짜가 가까운 순서로 D-Day를 보여 주고, 다 먹은 것과 버린 것을 이 기기에 기록하는 무료 도구입니다.",
       "image": "https://fridge-dday-alarm.enjoy-onepage.com/og-image.png",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "KRW"
-      }
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" }
     },
     {
       "@type": "FAQPage",
       "@id": "https://fridge-dday-alarm.enjoy-onepage.com/#faq",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "소비기한이 지난 음식은 무조건 버려야 하나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "개봉하지 않고 적정 냉장 온도를 유지했다면 소비기한 직후라도 냄새/변색이 없을 수 있으나, 어패류나 유제품은 변질 위험이 크므로 폐기를 권장합니다."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "냉동실에 넣으면 영구적으로 보관할 수 있나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "냉동실도 미생물 증식만 억제할 뿐 지방 산패와 냉동상(Freezer burn)이 진행되므로, 육류는 3~6개월 이내 소비가 권장됩니다."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "채소 보관 시 물기를 닦아서 넣어야 하나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "네, 키친타월로 표면 수분을 꼼꼼히 제거하고 밀폐 용기에 보관해야 무름 현상을 방지하고 보관 기간을 2배 이상 늘릴 수 있습니다."
-          }
-        }
+        { "@type": "Question", "name": "D-Day는 어떻게 계산하나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "이 기기의 달력으로 오늘부터 입력한 날짜까지 남은 날 수를 셉니다. 날짜가 오늘이면 D-Day, 지났으면 D+지난 날 수로 보여 줍니다. 자정이 지나면 바로 새 날짜로 다시 계산합니다." } },
+        { "@type": "Question", "name": "날짜가 지나면 꼭 버려야 하나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "이 도구는 입력한 날짜만 셀 뿐, 음식이 안전한지는 알 수 없습니다. 포장지에 적힌 표시와 보관 방법을 따르고, 냄새·색·모양이 이상하거나 조금이라도 의심되면 먹지 마세요." } },
+        { "@type": "Question", "name": "날짜가 적혀 있지 않은 음식은 어떻게 하나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "남은 반찬처럼 날짜가 없는 음식은 '오늘부터' 버튼으로 3일·7일·14일·1개월 뒤를 알림 날짜로 정할 수 있습니다. 이 날짜는 직접 정한 기준이며 안전 기한이 아닙니다." } },
+        { "@type": "Question", "name": "목록은 어디에 저장되나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "이 브라우저에만 저장되며 서버로 보내지 않습니다. 예전에 이 페이지에 넣어 둔 목록도 그대로 이어지며, 예전 버전이 처음 열 때 자동으로 넣던 예시 품목 3개만 지웁니다. 품목의 ✕ 버튼이나 기록 지우기로 삭제할 수 있습니다." } },
+        { "@type": "Question", "name": "다 먹음·버림 기록은 무엇인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "품목을 다 먹었거나 버렸을 때 누르면 이번 달과 전체 기간의 개수, 넣어 둔 가격의 합계, 날짜 안에 다 먹은 비율을 보여 줍니다. 가격은 선택 입력입니다." } }
       ]
     }
   ]
 }
-  </script>
-<script src="https://cdn.tailwindcss.com"></script>
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
 <style>
-        body { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); min-height: 100vh; font-family: 'Pretendard', sans-serif; }
-        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); border: 1px solid rgba(255, 255, 255, 0.18); }
-        .receipt { background: #fff; padding: 20px; border-radius: 10px; border: 1px dashed #ccc; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    
-        /* U3 Accessibility: Global Keyboard Focus Ring Standard */
-        :focus-visible {
-            outline: 2px solid #3b82f6 !important;
-            outline-offset: 2px !important;
-        }
-        input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible {
-            outline: 2px solid #2563eb !important;
-            outline-offset: 1px !important;
-        }
-    
-    </style>
-<link href="https://fridge-dday-alarm.enjoy-onepage.com/rss.xml" rel="alternate" title="자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기 RSS Feed" type="application/rss+xml"/>
-<link href="https://fridge-dday-alarm.enjoy-onepage.com/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml"/>
-<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106"></script><style id="layout-shield">
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  .manual-ad-box {
-    width: 100%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    overflow: hidden;
-  }
-  .manual-ad-box ins {
-    max-width: 100% !important;
-    overflow: hidden !important;
-  }
-</style>
-<style id="mobile-hardening-shield">
-  /* 모바일 한글 단어 단위 줄바꿈 보존 & 버튼 텍스트 단일행 쉴드 */
-  body, h1, h2, h3, h4, p, span, label {
-    word-break: keep-all;
-    overflow-wrap: break-word;
-  }
-  button, [role="button"], a.btn {
-    white-space: nowrap;
-    word-break: keep-all;
-  }
-  @media (max-width: 640px) {
-    input, select, textarea {
-      font-size: 16px !important;
-    }
-    button, [role="button"], a.btn {
-      min-height: 42px;
-    }
-  }
+:root{--bg:#f3faf6;--card:#fff;--ink:#12261c;--muted:#5b6f64;--accent:#059669;--line:#dcebe3;--g:#15803d;--y:#b45309;--r:#b91c1c}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}
+.header{background:linear-gradient(135deg,#047857,#10b981);color:#fff;text-align:center;padding:26px 16px 22px}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{opacity:.92;margin-top:6px;font-size:.95rem}
+.wrap{max-width:1080px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;align-items:start}.result{position:sticky;top:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.1rem;margin:0 0 10px}
+.lbl{display:block;font-weight:600;margin:10px 0 4px;font-size:.95rem}
+input[type=text],input[type=number],input[type=date],select,textarea{width:100%;font:inherit;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hint{font-size:.86rem;color:var(--muted);margin:6px 0}
+.btn{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer;min-height:44px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.sm{padding:5px 9px;font-size:.85rem;border-radius:8px;min-height:36px}
+.btn.armed{background:#fee2e2;border-color:#fca5a5;color:var(--r)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.actions,.quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.err{color:var(--r);font-weight:600;margin:10px 0 0}
+.counts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:4px 0 10px}
+.count{border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center}
+.count b{display:block;font-size:1.4rem}
+.count span{font-size:.8rem;color:var(--muted)}
+.count.r b{color:var(--r)}.count.y b{color:var(--y)}.count.g b{color:var(--g)}
+.items{list-style:none;margin:0;padding:0}
+.items li{border-top:1px solid var(--line);padding:9px 0;display:flex;gap:8px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.items .nm{font-weight:700}
+.items .meta{display:block;font-size:.85rem;color:var(--muted)}
+.badge{display:inline-block;font-size:.8rem;font-weight:700;border-radius:999px;padding:2px 9px;margin-left:6px;white-space:nowrap}
+.badge.r{background:#fee2e2;color:var(--r)}.badge.y{background:#fef3c7;color:#92400e}.badge.g{background:#dcfce7;color:var(--g)}
+.btns{display:flex;gap:6px;flex-shrink:0;flex-wrap:wrap}
+.tally{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.tally th,.tally td{text-align:left;padding:7px 8px;border-top:1px solid var(--line)}
+.tbl-wrap{overflow-x:auto}
+.copy-box{margin-top:8px;font-size:.88rem;min-height:110px}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#34473d}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.ad-box{max-width:1080px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#12261c;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
 </style>
 </head>
-<body class="flex flex-col items-center justify-center p-4">
-<!-- 상단 슬림 띠배너 (헤더 직하단: 50~60px 슬림형) -->
-<div class="manual-ad-box ad-top-banner" style="width: 100%; max-width: 960px; margin: 8px auto 16px; text-align: center;">
-<ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="horizontal" data-ad-slot="3824727725" data-full-width-responsive="true" style="display:inline-block;width:100%;height:60px;"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<!-- 상단 슬림 띠배너 (헤더 직하단: 50~60px 슬림형) -->
-<div class="glass-card w-full max-w-5xl p-3.5 sm:p-6 mb-8">
-<div class="text-3xl font-extrabold text-center text-gray-800 mb-2">자취생 냉장고 수명 알리미</div>
-<p class="text-center text-gray-600 mb-8">자취생을 위한 식재료 유통기한 D-Day 계산 및 알리미입니다.</p>
-<!-- LOGIC START -->
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
-  
-  body {
-    font-family: 'Noto Sans KR', sans-serif;
-  }
-  
-  .receipt {
-    font-family: 'Courier Prime', 'Noto Sans KR', monospace;
-    background: #fbfbf9;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e5e5e0;
-    position: relative;
-  }
-  
-  /* 영수증 상하단 톱니바퀴 연출 */
-  .receipt::before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background: linear-gradient(-135deg, #fbfbf9 3px, transparent 0), linear-gradient(135deg, #fbfbf9 3px, transparent 0);
-    background-size: 10px 10px;
-  }
-  
-  .receipt::after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background: linear-gradient(-45deg, #fbfbf9 3px, transparent 0), linear-gradient(45deg, #fbfbf9 3px, transparent 0);
-    background-size: 10px 10px;
-  }
+<body>
+<header class="header">
+  <h1>자취생 냉장고 수명 알리미</h1>
+  <div class="header-sub">날짜가 가까운 순서로 먼저 먹을 것 보기 · 무료, 가입 없음, 이 기기에만 저장</div>
+</header>
 
-  /* 스크롤바 미세조정 */
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 5px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: #f1f5f9;
-    border-radius: 10px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 10px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8;
-  }
-</style>
-<div class="w-full mx-auto">
-<!-- 메인 카드 데크 -->
-<div class="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-3xl shadow-xl border border-slate-200/50">
-<!-- 앱 헤더 -->
-<div class="flex items-center justify-between mb-6">
-<div class="flex items-center gap-3">
-<div class="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center shadow-md shadow-emerald-500/20">
-<i class="fa-solid fa-refrigerator text-white text-2xl"></i>
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block;height:60px;max-height:90px" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
-<div>
-<h1 class="text-lg font-black text-slate-800 leading-tight">자취생 냉장고</h1>
-<span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-100">수명 알리미</span>
-</div>
-</div>
-<div class="text-right">
-<span class="text-2xl">🥦</span>
-</div>
-</div>
-<!-- 2-COLUMN RESPONSIVE GRID -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
-<!-- LEFT COLUMN: INPUT FORM & TIPS (5 COLS) -->
-<div class="lg:col-span-5 space-y-5">
-<!-- 식재료 입력 폼 -->
-<div class="bg-white p-5 rounded-2xl border border-slate-200/60 shadow-sm mb-6">
-<h2 class="text-sm font-bold text-slate-700 mb-3.5 flex items-center gap-2">
-<span class="w-1.5 h-3.5 bg-emerald-500 rounded-full inline-block"></span>
-        신규 식재료 등록
-      </h2>
-<div class="space-y-3.5">
-<div>
-<label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">식재료 명</label>
-<input class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 text-slate-700 placeholder-slate-300 transition-all font-medium" id="foodName" placeholder="예: 무항생제 우유, 유기농 토마토" type="text" aria-label="예: 무항생제 우유, 유기농 토마토" />
-</div>
-<div class="grid grid-cols-2 gap-3">
-<div>
-<label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">카테고리</label>
-<select class="w-full px-3 py-2.5 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 text-slate-700 bg-white transition-all font-medium" id="foodCategory" aria-label="foodCategory">
-<option value="🥦 채소/과일">🥦 채소/과일</option>
-<option value="🥩 육류/생선">🥩 육류/생선</option>
-<option value="🥛 유제품">🥛 유제품</option>
-<option value="🥚 계란/두부">🥚 계란/두부</option>
-<option value="🥫 소스/조미">🥫 소스/조미</option>
-<option value="🍞 가공/반찬">🍞 가공/반찬</option>
-</select>
-</div>
-<div>
-<label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">소비기한</label>
-<input class="w-full px-3 py-2.5 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 text-slate-700 transition-all font-medium" id="expiryDate" type="date" aria-label="Expirydate" />
-</div>
-</div>
-<button class="w-full bg-emerald-500 hover:bg-emerald-600 active:scale-[0.98] text-white font-bold py-3 rounded-xl text-sm transition-all shadow-md shadow-emerald-500/10 flex items-center justify-center gap-1.5 mt-2 whitespace-nowrap" onclick="addFoodItem()">
-<i class="fa-solid fa-plus text-xs"></i>
-          냉장고에 넣기
-        </button>
-</div>
-</div>
-<!-- 식재료 보관 꿀팁 박스 -->
-<div class="bg-white/80 p-4 rounded-2xl border border-slate-200/70 text-xs text-slate-600 space-y-2">
-<span class="font-bold text-emerald-700 flex items-center gap-1 text-sm">
-            💡 소비기한 vs 유통기한 상식
-          </span>
-<p class="leading-relaxed">2023년부터 계도된 <strong>소비기한</strong>은 보관 방법을 준수했을 때 섭취해도 안전한 기한입니다. D-Day 전에 빠르게 소진하세요!</p>
-</div>
-<div class="p-4 bg-white/70 rounded-xl border border-slate-200 text-center">
-<p class="text-xs text-slate-600 font-medium mb-2">자취생 냉장고 절약 꿀팁 가이드북</p>
-<a class="inline-block w-full py-2.5 px-4 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold rounded-lg transition text-center" href="guides/guide1.html">
-            📖 식재료 낭비 제로 가이드 보기
-          </a>
-</div>
-</div>
-<!-- RIGHT COLUMN: INVENTORY & RECEIPT (7 COLS, STICKY ON PC) -->
-<div class="lg:col-span-7 space-y-5 lg:sticky lg:top-6">
-<!-- 현재 냉장고 품목 목록 -->
-<div class="mb-6">
-<div class="flex justify-between items-center mb-3">
-<h3 class="text-sm font-extrabold text-slate-700 flex items-center gap-1.5">
-<i class="fa-solid fa-box-archive text-slate-400"></i>
-          보관 중인 식재료
-        </h3>
-<span class="text-[11px] font-bold bg-slate-200 text-slate-700 px-2.5 py-0.5 rounded-full" id="itemCount">0개 보관중</span>
-</div>
-<!-- 품목 리스트 영역 -->
-<div class="space-y-2 max-h-[220px] overflow-y-auto pr-1 custom-scrollbar" id="foodList">
-<!-- 동적 렌더링 -->
-</div>
-</div>
-<!-- 영수증 영역 (결과 영역) -->
-<div class="receipt mt-8 p-6 rounded-lg">
-<!-- 영수증 헤더 -->
-<div class="text-center border-b border-dashed border-stone-300 pb-4">
-<div class="text-stone-400 font-mono text-[10px] tracking-wider uppercase">--- LIFE CHECK RECEIPT ---</div>
-<!-- 원클릭 결과 복사 버튼 -->
-<div class="mt-4 text-center">
-<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-900 text-white text-sm font-bold rounded-xl shadow-md transition-all duration-200 whitespace-nowrap" onclick="window.copyResultToClipboard()" type="button">
-<svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-<span>결과 전체 복사하기</span>
-</button>
-</div>
-<h2 class="text-base font-black text-stone-800 tracking-tight mt-1">냉장고 수명 진단 영수증</h2>
-<div class="text-[9px] text-stone-400 font-mono mt-1.5 flex justify-between px-2">
-<span id="receiptNumber">NO. 20231027-001</span>
-<span id="receiptDate">2023.10.27 12:00</span>
-</div>
-</div>
-<!-- 영수증 내용 테이블 헤더 -->
-<div class="mt-4 text-[10px] font-bold text-stone-500 grid grid-cols-12 gap-1 border-b border-stone-200 pb-1.5">
-<span class="col-span-6">품목명 [카테고리]</span>
-<span class="col-span-3 text-center">잔여일</span>
-<span class="col-span-3 text-right">상태</span>
-</div>
-<!-- 영수증 품목 리스트 -->
-<div class="space-y-2.5 py-3 text-xs text-stone-700 font-medium" id="receiptItems">
-<!-- 동적 렌더링 -->
-</div>
-<!-- 구분선 -->
-<div class="border-t border-dashed border-stone-300 pt-3 mt-1.5">
-<div class="flex justify-between text-xs text-stone-600 space-y-1 flex-col">
-<div class="flex justify-between">
-<span>총 보관 품목 수</span>
-<span class="font-mono font-bold" id="receiptTotalCount">0 EA</span>
-</div>
-<div class="flex justify-between">
-<span>주의 품목 (D-3 이내)</span>
-<span class="font-mono text-amber-600 font-bold" id="receiptWarningCount">0 EA</span>
-</div>
-<div class="flex justify-between">
-<span>유통기한 만료</span>
-<span class="font-mono text-rose-600 font-bold" id="receiptDangerCount">0 EA</span>
-</div>
-</div>
-</div>
-<!-- 종합 신선 등급 -->
-<div class="border-t-2 border-double border-stone-300 mt-4 pt-4">
-<div class="flex justify-between items-center bg-stone-100/80 p-2.5 rounded border border-stone-200/50">
-<span class="text-[11px] font-bold text-stone-500 uppercase tracking-wider">나의 냉장고 신선도 등급</span>
-<span class="text-lg font-black text-emerald-600" id="receiptGrade">A+</span>
-</div>
-</div>
-<!-- 바코드 영역 -->
-<div class="text-center mt-6">
-<div class="inline-flex flex-col items-center">
-<!-- 가상 바코드 CSS 생성 -->
-<div class="flex items-end space-x-[1.5px] h-9 bg-white px-2 py-1 border border-stone-200 rounded">
-<div class="w-[2px] h-full bg-stone-800"></div>
-<div class="w-[1px] h-full bg-stone-800"></div>
-<div class="w-[3px] h-full bg-stone-800"></div>
-<div class="w-[1px] h-full bg-stone-800"></div>
-<div class="w-[4px] h-full bg-stone-800"></div>
-<div class="w-[2px] h-full bg-stone-800"></div>
-<div class="w-[1px] h-full bg-stone-800"></div>
-<div class="w-[3px] h-full bg-stone-800"></div>
-<div class="w-[1px] h-full bg-stone-800"></div>
-<div class="w-[2px] h-full bg-stone-800"></div>
-<div class="w-[4px] h-full bg-stone-800"></div>
-<div class="w-[1px] h-full bg-stone-800"></div>
-<div class="w-[2px] h-full bg-stone-800"></div>
-<div class="w-[3px] h-full bg-stone-800"></div>
-<div class="w-[1px] h-full bg-stone-800"></div>
-</div>
-<span class="text-[8px] font-mono tracking-widest text-stone-400 mt-1">SINGLE-ALERTER-99</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script>
-  // 오늘 날짜 기준 날짜 오프셋 도우미 함수
-  function getOffsetDate(days) {
-    const d = new Date();
-    d.setDate(d.getDate() + days);
-    return d.toISOString().split('T')[0];
-  }
+<!-- ADSENSE END: top -->
 
-  // 초기 기본 가상 데이터 탑재 및 로컬 스토리지 연동
-  let defaultData = [
-    { id: 1, name: '서울우유 1L', category: '🥛 유제품', expiryDate: getOffsetDate(2) },
-    { id: 2, name: '찌개용 생삼겹살', category: '🥩 육류/생선', expiryDate: getOffsetDate(-1) },
-    { id: 3, name: '유기농 양배추', category: '🥦 채소/과일', expiryDate: getOffsetDate(8) }
-  ];
-  let foodStorage = [];
-  try {
-    const stored = localStorage.getItem('fridgeItems');
-    if (stored) {
-      foodStorage = JSON.parse(stored);
-    } else {
-      foodStorage = defaultData;
-      localStorage.setItem('fridgeItems', JSON.stringify(foodStorage));
-    }
-  } catch (e) {
-    foodStorage = defaultData;
-  }
-  function saveToLocalStorage() {
-    localStorage.setItem('fridgeItems', JSON.stringify(foodStorage));
-  }
-
-  // 초기 날짜 인풋 세팅 (오늘 기준으로 자동 입력)
-  document.getElementById('expiryDate').value = getOffsetDate(5);
-
-  // XSS 방어용 HTML 엔티티 이스케이프
-  function escapeHtml(str) {
-    if (!str) return '';
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
-
-  // 디데이 계산 엔진 (손상/비정상 날짜 NaN 방어)
-  function calculateDDay(expiryDateStr) {
-    if (!expiryDateStr) return NaN;
-    const today = new Date();
-    today.setHours(0,0,0,0);
-    const target = new Date(expiryDateStr);
-    if (isNaN(target.getTime())) return NaN;
-    target.setHours(0,0,0,0);
-    
-    const diffTime = target - today;
-    return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  }
-
-  // 영수증 난수 발급 및 날짜 표시
-  function updateReceiptMeta() {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const date = String(now.getDate()).padStart(2, '0');
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-
-    document.getElementById('receiptNumber').innerText = `NO. ${year}${month}${date}-${Math.floor(Math.random() * 900 + 100)}`;
-    document.getElementById('receiptDate').innerText = `${year}.${month}.${date} ${hours}:${minutes}:${seconds}`;
-  }
-
-  // 신규 식재료 추가 비즈니스 로직
-  function addFoodItem() {
-    const nameInput = document.getElementById('foodName');
-    const categoryInput = document.getElementById('foodCategory');
-    const dateInput = document.getElementById('expiryDate');
-
-    if (!nameInput.value.trim()) {
-      alert('식재료 이름을 입력해 주세요! 🤔');
-      nameInput.focus();
-      return;
-    }
-
-    if (!dateInput.value) {
-      alert('소비기한을 입력해 주세요! 📅');
-      return;
-    }
-
-    const newItem = {
-      id: Date.now(),
-      name: nameInput.value.trim(),
-      category: categoryInput.value,
-      expiryDate: dateInput.value
-    };
-
-    foodStorage.unshift(newItem);
-    nameInput.value = '';
-    saveToLocalStorage();
-    
-    // UI 다시 렌더링
-    renderAll();
-  }
-
-  // 식재료 삭제 로직
-  function deleteFoodItem(id) {
-    foodStorage = foodStorage.filter(item => item.id !== id);
-    saveToLocalStorage();
-    renderAll();
-  }
-
-  // 전체 UI 렌더링 마스터 함수
-  function renderAll() {
-    renderMainList();
-    renderReceipt();
-  }
-
-  // 1. 메인 냉장고 보관 품목 카드 렌더링
-  function renderMainList() {
-    const listContainer = document.getElementById('foodList');
-    const countBadge = document.getElementById('itemCount');
-    countBadge.innerText = `${foodStorage.length}개 보관중`;
-
-    if (foodStorage.length === 0) {
-      listContainer.innerHTML = `
-        <div class="text-center py-10 bg-white rounded-2xl border border-dashed border-slate-200">
-          <i class="fa-solid fa-basket-shopping text-slate-300 text-3xl mb-2"></i>
-          <p class="text-xs text-slate-400 font-medium">냉장고가 텅 비어 있습니다!</p>
-        </div>
-      `;
-      return;
-    }
-
-    listContainer.innerHTML = '';
-    foodStorage.forEach(item => {
-      const dDay = calculateDDay(item.expiryDate);
-      let badgeClass = '';
-      let badgeText = '';
-      let borderClass = 'border-slate-100';
-
-      if (isNaN(dDay)) {
-        badgeClass = 'bg-slate-100 text-slate-500 border-slate-200';
-        badgeText = '날짜오류';
-        borderClass = 'border-slate-200';
-      } else if (dDay < 0) {
-        badgeClass = 'bg-rose-50 text-rose-600 border-rose-100';
-        badgeText = `D+${Math.abs(dDay)} (만료)`;
-        borderClass = 'border-rose-100 hover:border-rose-200';
-      } else if (dDay === 0) {
-        badgeClass = 'bg-amber-50 text-amber-600 border-amber-100';
-        badgeText = 'D-Day';
-        borderClass = 'border-amber-100 hover:border-amber-200';
-      } else if (dDay <= 3) {
-        badgeClass = 'bg-amber-50 text-amber-600 border-amber-100';
-        badgeText = `D-${dDay}`;
-        borderClass = 'border-amber-100 hover:border-amber-200';
-      } else {
-        badgeClass = 'bg-emerald-50 text-emerald-600 border-emerald-100';
-        badgeText = `D-${dDay}`;
-        borderClass = 'hover:border-slate-300';
-      }
-
-      const safeName = escapeHtml(item.name);
-      const safeCategoryIcon = escapeHtml(item.category.split(' ')[0]);
-      const safeDate = escapeHtml(item.expiryDate);
-
-      listContainer.innerHTML += `
-        <div class="flex items-center justify-between p-3.5 bg-white rounded-xl border ${borderClass} transition-all duration-150">
-          <div class="flex items-center gap-2.5">
-            <span class="text-lg">${safeCategoryIcon}</span>
-            <div>
-              <h4 class="text-xs font-bold text-slate-700">${safeName}</h4>
-              <p class="text-[10px] font-medium text-slate-400 mt-0.5">${safeDate} 까지</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="text-[11px] font-bold px-2 py-0.5 rounded border ${badgeClass}">${badgeText}</span>
-            <button onclick="deleteFoodItem(${Number(item.id)})" class="text-slate-300 hover:text-rose-500 p-1 transition-colors whitespace-nowrap" title="삭제">
-              <i class="fa-solid fa-trash-can text-xs"></i>
-            </button>
-          </div>
-        </div>
-      `;
-    });
-  }
-
-  // 2. 결과 영수증 뷰 렌더링 및 계산
-  function renderReceipt() {
-    const receiptContainer = document.getElementById('receiptItems');
-    const totalCountEl = document.getElementById('receiptTotalCount');
-    const warningCountEl = document.getElementById('receiptWarningCount');
-    const dangerCountEl = document.getElementById('receiptDangerCount');
-    const gradeEl = document.getElementById('receiptGrade');
-
-    if (foodStorage.length === 0) {
-      receiptContainer.innerHTML = `
-        <div class="text-center py-6 text-stone-400">
-          <p class="text-[11px] tracking-tight">--- NO ITEMS LISTED ---</p>
-        </div>
-      `;
-      totalCountEl.innerText = '0 EA';
-      warningCountEl.innerText = '0 EA';
-      dangerCountEl.innerText = '0 EA';
-      gradeEl.innerText = 'S (PURE)';
-      gradeEl.className = 'text-lg font-black text-emerald-600';
-      return;
-    }
-
-    let warningCount = 0;
-    let dangerCount = 0;
-    receiptContainer.innerHTML = '';
-
-    foodStorage.forEach(item => {
-      const dDay = calculateDDay(item.expiryDate);
-      let statusText = '';
-      let statusStyle = 'text-stone-700';
-      let dDayDisplay = '';
-
-      if (isNaN(dDay)) {
-        dangerCount++;
-        statusText = '날짜오류';
-        statusStyle = 'text-slate-500 font-bold';
-        dDayDisplay = 'ERR';
-      } else if (dDay < 0) {
-        dangerCount++;
-        statusText = '위험/폐기';
-        statusStyle = 'text-rose-600 font-bold';
-        dDayDisplay = `D+${Math.abs(dDay)}`;
-      } else if (dDay <= 3) {
-        warningCount++;
-        statusText = '주의/시급';
-        statusStyle = 'text-amber-600 font-bold';
-        dDayDisplay = dDay === 0 ? 'D-Day' : `D-${dDay}`;
-      } else {
-        statusText = '안전';
-        statusStyle = 'text-emerald-600';
-        dDayDisplay = `D-${dDay}`;
-      }
-
-      // 글자수 이쁘게 잘라서 정렬 처리하기 및 XSS 이스케이프
-      const rawName = item.name || '';
-      const cleanCategory = (item.category || '').split(' ')[1] || '기타';
-      const displayName = rawName.length > 8 ? rawName.slice(0, 8) + '..' : rawName;
-      const combinedName = escapeHtml(`${displayName}[${cleanCategory}]`);
-
-      receiptContainer.innerHTML += `
-        <div class="grid grid-cols-12 gap-1 font-mono items-center">
-          <span class="col-span-6 truncate">${combinedName}</span>
-          <span class="col-span-3 text-center text-[11px]">${escapeHtml(dDayDisplay)}</span>
-          <span class="col-span-3 text-right text-[10px] ${statusStyle}">${statusText}</span>
-        </div>
-      `;
-    });
-
-    // 메타데이터 정보 업데이트
-    totalCountEl.innerText = `${foodStorage.length} EA`;
-    warningCountEl.innerText = `${warningCount} EA`;
-    dangerCountEl.innerText = `${dangerCount} EA`;
-
-    // 신선 등급 책정 로직
-    let grade = 'A+';
-    let gradeClass = 'text-emerald-600';
-    const total = foodStorage.length;
-    const dangerRatio = dangerCount / total;
-    const warningRatio = warningCount / total;
-
-    if (dangerCount > 0) {
-      if (dangerRatio >= 0.5) {
-        grade = 'F (폐기직전)';
-        gradeClass = 'text-rose-600';
-      } else if (dangerRatio >= 0.2) {
-        grade = 'D (경고)';
-        gradeClass = 'text-rose-500';
-      } else {
-        grade = 'C (불안정)';
-        gradeClass = 'text-orange-500';
-      }
-    } else if (warningCount > 0) {
-      if (warningRatio >= 0.4) {
-        grade = 'B (조리시급)';
-        gradeClass = 'text-amber-500';
-      } else {
-        grade = 'A (양호)';
-        gradeClass = 'text-emerald-500';
-      }
-    } else {
-      grade = 'A+ (신선)';
-      gradeClass = 'text-emerald-600';
-    }
-
-    gradeEl.innerText = grade;
-    gradeEl.className = `text-base font-black ${gradeClass}`;
-  }
-
-  // 초기 시작 시 동작 설정
-  updateReceiptMeta();
-  renderAll();
-</script>
-<!-- LOGIC END -->
-</div>
-<!-- Google AdSense -->
-<!-- Web Share API Button -->
-<button class="w-full max-w-md bg-gray-800 text-white font-bold py-4 rounded-full shadow-lg hover:bg-gray-700 transition flex justify-center items-center gap-2 mb-8 whitespace-nowrap" onclick="if(navigator.share) navigator.share({title: '자취생 냉장고 수명 알리미', url: window.location.href})">
-        공유하기
-    </button>
-<!-- Footer -->
-<!-- 중간 반응형 배너 (In-Result Slot) -->
-<!-- 📌 상세 가이드 & FAQ 아코디언 (Google E-E-A-T 및 실사용자 가이드라인 100% 충족) -->
-<section class="max-w-4xl mx-auto my-12 px-4">
-<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
-<div class="border-b border-slate-200 dark:border-slate-800 pb-5 mb-6">
-<h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
-<span>📖</span> 냉장고 식재료 소비기한(Use-by Date) 관리 및 보관 가이드
-      </h3>
-<p class="text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">유통기한과 소비기한의 차이, 식재료 카테고리별 냉장/냉동 보관 표준 주기를 설명합니다.</p>
-</div>
-<!-- 공식 원리 & 핵심 기준 -->
-<div class="mb-8">
-<h4 class="text-xs font-black uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-4 flex items-center gap-1.5">
-<span>⚖️</span> 핵심 산출 기준 및 법정 원리
-      </h4>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-<div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200/80 dark:border-slate-700/80">
-<h4 class="text-base font-bold text-slate-800 dark:text-slate-100 mb-1.5 flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-blue-500"></span>소비기한 표시제 준수
-          </h4>
-<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">2023년부터 도입된 소비기한은 규정된 보관 조건을 지켰을 때 안전하게 섭취 가능한 최종 기한을 의미합니다.</p>
-</div>
-<div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200/80 dark:border-slate-700/80">
-<h4 class="text-base font-bold text-slate-800 dark:text-slate-100 mb-1.5 flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-blue-500"></span>온도대별 냉장실 수납 원칙
-          </h4>
-<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">도어 포켓(온도 변동 큼, 소스류) &lt; 상단(유제품, 반찬) &lt; 하단 안쪽(가장 차가움, 육류/어패류) &lt; 신선칸(채소/과일) 구획 배치가 필수입니다.</p>
-</div>
-<div class="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-200/80 dark:border-slate-700/80">
-<h4 class="text-base font-bold text-slate-800 dark:text-slate-100 mb-1.5 flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-blue-500"></span>로컬 스토리지 데이터 영구 보존
-          </h4>
-<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">입력하신 식재료 목록과 D-day는 브라우저 내부 캐시(LocalStorage)에 안전하게 암호화 보존되어 재접속 시에도 유지됩니다.</p>
-</div>
-</div>
-</div>
-<!-- 자주 묻는 질문 (FAQ) -->
-<div>
-<h4 class="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-4 flex items-center gap-1.5">
-<span>❓</span> 자주 묻는 질문 (FAQ)
-      </h4>
-<div class="space-y-3">
-<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-800">
-<h4 class="font-semibold text-slate-800 dark:text-slate-100 text-sm mb-1">Q. 소비기한이 지난 음식은 무조건 버려야 하나요?</h4>
-<p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">A. 개봉하지 않고 적정 냉장 온도를 유지했다면 소비기한 직후라도 냄새/변색이 없을 수 있으나, 어패류나 유제품은 변질 위험이 크므로 폐기를 권장합니다.</p>
-</div>
-<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-800">
-<h4 class="font-semibold text-slate-800 dark:text-slate-100 text-sm mb-1">Q. 냉동실에 넣으면 영구적으로 보관할 수 있나요?</h4>
-<p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">A. 냉동실도 미생물 증식만 억제할 뿐 지방 산패와 냉동상(Freezer burn)이 진행되므로, 육류는 3~6개월 이내 소비가 권장됩니다.</p>
-</div>
-<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-4 bg-white dark:bg-slate-800">
-<h4 class="font-semibold text-slate-800 dark:text-slate-100 text-sm mb-1">Q. 채소 보관 시 물기를 닦아서 넣어야 하나요?</h4>
-<p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">A. 네, 키친타월로 표면 수분을 꼼꼼히 제거하고 밀폐 용기에 보관해야 무름 현상을 방지하고 보관 기간을 2배 이상 늘릴 수 있습니다.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 📖 E-E-A-T 전문성 강화: 공식 산출 근거 & 실전 가이드 (Q1~Q7 헌법 준수) -->
-<section class="max-w-4xl mx-auto my-8 px-4">
-  <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-700 shadow-sm space-y-6">
-    <div class="border-b border-slate-200 dark:border-slate-700 pb-4">
-      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 mb-2">
-        <span>⚖️ 2026년 최신 공식 기준 검증</span>
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" id="add" aria-labelledby="in-h">
+      <h2 id="in-h">1. 식재료 넣기</h2>
+      <label class="lbl" for="name">식재료 이름</label>
+      <input id="name" type="text" maxlength="60" autocomplete="off" placeholder="예: 두부, 남은 김치찌개">
+      <div class="row2">
+        <div><label class="lbl" for="cat">종류</label>
+          <select id="cat"><option value="🥦 채소/과일">🥦 채소/과일</option><option value="🥩 육류/생선">🥩 육류/생선</option><option value="🥛 유제품">🥛 유제품</option><option value="🥚 계란/두부">🥚 계란/두부</option><option value="🥫 소스/조미">🥫 소스/조미</option><option value="🍞 가공/반찬">🍞 가공/반찬</option></select></div>
+        <div><label class="lbl" for="kind">날짜 종류</label>
+          <select id="kind"><option value="use" selected>소비기한</option><option value="sell">유통기한</option><option value="mine">내가 정한 날</option></select></div>
       </div>
-      <h3 class="text-xl font-black text-slate-900 dark:text-white tracking-tight">
-        냉장고 식재료 유통기한 디데이 알리미 산출 공식 및 실무 활용 가이드
-      </h3>
-      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1">
-        본 도구는 식품의약품안전처 2026년 소비기한 표시제 가이드라인 및 식품위생법 기준을 바탕으로 설계된 전문 시뮬레이터입니다.
-      </p>
-    </div>
-
-    <!-- 핵심 산출 공식 박스 -->
-    <div class="p-4 bg-slate-50 dark:bg-slate-900/60 rounded-xl border border-slate-200 dark:border-slate-700">
-      <div class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-1">핵심 산출 공식 (Formula)</div>
-      <div class="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white font-mono leading-relaxed">
-        소비기한 = 유통기한 × 식품별 안전계수(두부 1.5, 우유 1.3, 치즈 1.7 등)
+      <div class="row2">
+        <div><label class="lbl" for="date">날짜</label><input id="date" type="date"></div>
+        <div><label class="lbl" for="price">가격(원, 선택)</label><input id="price" type="number" inputmode="numeric" min="0" max="10000000" step="1" placeholder="예: 3500"></div>
       </div>
-    </div>
-
-    <!-- 실전 시뮬레이션 사례 -->
-    <div class="p-4 bg-blue-50/50 dark:bg-blue-950/30 rounded-xl border border-blue-100 dark:border-blue-900/50">
-      <div class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-1">💡 실전 계산 사례 (Case Study)</div>
-      <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-        예를 들어, 개봉하지 않고 냉장 보관된 우유는 유통기한 경과 후 최대 14일까지 안전하게 섭취할 수 있어 불필요한 음식물 쓰레기를 방지합니다.
-      </p>
-    </div>
-
-    <!-- 독자 실천 행동 요령 (Actionable Checklist) -->
-    <div>
-      <h4 class="text-sm font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-        <span>📋</span> 반드시 챙겨야 할 실전 체크리스트
-      </h4>
-      <ul class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-2">
-            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">✓</span><span>장을 본 직후 식재료 포장지의 소비기한을 확인하고 도구에 등록하세요.</span></li>
-            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">✓</span><span>유통기한 임박(D-3 이내) 식재료는 냉장고 상단 눈높이 칸으로 전진 배치하세요.</span></li>
-            <li class="flex items-start gap-2"><span class="text-blue-600 font-bold">✓</span><span>장기 보관이 필요한 육류나 어패류는 소분하여 냉동실에 밀폐 보관하세요.</span></li>
-      </ul>
-    </div>
-
-    <!-- 법적 면책 조항 (Legal Disclaimer) -->
-    <div class="pt-4 border-t border-slate-100 dark:border-slate-700/60 text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
-      <strong>⚠️ 면책 고지:</strong> 본 계산 결과는 식품의약품안전처 2026년 소비기한 표시제 가이드라인 및 식품위생법 기준 및 공인 산식을 기반으로 한 시뮬레이션 결과이며, 관계 법령 개정 및 사용자의 개별 사안에 따라 실제 금액이나 판단 기준과 차이가 발생할 수 있습니다. 법적 분쟁이나 공식 행정 절차 진행 전 반드시 관할 기관 및 공인 전문가와 상담하시기 바랍니다.
-    </div>
-  </div>
-</section>
-
-<!-- 🔗 연관 유틸리티 도구 추천 카드 (사용자 체류시간 증가 & SEO 내부 링크) -->
-<section class="max-w-4xl mx-auto my-8 px-4">
-<div class="bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
-<h3 class="text-base font-black text-slate-900 dark:text-white mb-4 flex items-center gap-2">
-<span>💡</span> 함께 많이 활용하는 필수 계산기 &amp; 도구
-    </h3>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
-<a class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group" href="https://child-subsidy-calc.enjoy-onepage.com/" target="_blank" rel="noopener noreferrer">
-<div>
-<div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
-<div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">아동수당·부모급여 계산기</div>
-</div>
-<span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
-</a>
-<a class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group" href="https://wonderweeksportal.enjoy-onepage.com/" target="_blank" rel="noopener noreferrer">
-<div>
-<div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
-<div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">원더윅스 급성장기 계산기</div>
-</div>
-<span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
-</a>
-<a class="p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:shadow-md transition flex items-center justify-between group" href="https://severe-disability-subsidy-calc.enjoy-onepage.com/" target="_blank" rel="noopener noreferrer">
-<div>
-<div class="text-xs text-blue-600 dark:text-blue-400 font-bold mb-1">추천 유틸리티</div>
-<div class="text-sm font-black text-slate-800 dark:text-slate-100 group-hover:text-blue-600 transition">중증장애인 수당 계산기</div>
-</div>
-<span class="text-slate-400 group-hover:translate-x-1 transition font-bold">→</span>
-</a>
-</div>
-</div>
-</section>
-
-      <!-- 2026 Legal Basis & Disclaimer -->
-      <div class="mt-8 mb-4 p-3 bg-slate-50 dark:bg-slate-800/50 rounded-lg text-xs text-slate-500 text-center border border-slate-200 dark:border-slate-700">
-        <p>※ 본 도구는 2026년 최신 공식 기준 및 웹 표준 알고리즘을 기반으로 제작되었으며, 산출 및 변환 결과는 참고용 모의 데이터로서 법적 효력을 갖지 않습니다.</p>
+      <p class="hint">날짜가 없는 음식은 오늘부터 며칠 뒤로 정해 두세요 (직접 정한 기준이며 안전 기한이 아닙니다).</p>
+      <div class="quick">
+        <button type="button" class="btn sm" data-plus="3">오늘부터 3일</button>
+        <button type="button" class="btn sm" data-plus="7">7일</button>
+        <button type="button" class="btn sm" data-plus="14">14일</button>
+        <button type="button" class="btn sm" data-plus="m1">1개월</button>
       </div>
-
-<!-- 🔗 딥리서치 토픽 클러스터: 관련 전문 블로그 가이드 역링크 -->
-<section class="max-w-4xl mx-auto my-6 px-4">
-  <div class="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-800/80 rounded-2xl border border-blue-200/80 dark:border-slate-700 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-3">
-    <div class="flex items-center gap-3">
-      <span class="text-2xl flex-shrink-0">🏛️</span>
-      <div class="text-left">
-        <div class="text-[11px] font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">공식 심층 가이드 연계</div>
-        <div class="text-xs sm:text-sm font-bold text-slate-800 dark:text-slate-100 leading-snug">정부24 '출력 불가/미지원 프린터' 오류 1분 해결법 및 2026 정부지원금 실무 가이드</div>
-      </div>
-    </div>
-    <a href="https://life-kr.enjoy-onepage.com/2026/09/18/gov24-printer-pdf-error-fix/" target="_blank" rel="noopener noreferrer" class="shrink-0 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl transition shadow-sm hover:shadow flex items-center gap-1.5">
-      <span>민원 가이드 읽기</span>
-      <span>→</span>
-    </a>
-  </div>
-</section>
-
-<footer class="w-full max-w-4xl text-center pb-8 text-sm text-gray-700/80">
-<div class="flex justify-center items-center gap-4 mb-3">
-<a class="hover:text-gray-900 transition font-medium" href="terms.html">이용약관</a>
-<span class="text-gray-400 text-xs">|</span>
-<a class="hover:text-gray-900 transition font-medium" href="privacy.html">개인정보처리방침</a>
-</div>
-<p class="text-xs text-gray-600">© 2026 자취생 냉장고 수명 알리미. All rights reserved.</p>
-</footer>
-<!-- 하단 대형 배너 (푸터 직전) -->
-<div class="manual-ad-box ad-bottom-banner" style="width: 100%; max-width: 960px; margin: 24px auto 16px; text-align: center;">
-<ins class="adsbygoogle" data-ad-client="ca-pub-2228289204702106" data-ad-format="auto" data-ad-slot="3416334507" data-full-width-responsive="true" style="display:block"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<!-- 하단 대형 배너 (푸터 직전) -->
-<!-- E-E-A-T 서브페이지 네비게이션 링크 -->
-<div class="max-w-4xl mx-auto px-4 py-4 mt-6 border-t border-slate-200 flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-500">
-<a class="hover:text-blue-600 transition" href="/about.html">서비스 소개 &amp; 산출 공식</a>
-<span class="text-slate-300">·</span>
-<a class="hover:text-blue-600 transition" href="/privacy.html">개인정보처리방침 (로컬 연산)</a>
-<span class="text-slate-300">·</span>
-<a class="hover:text-blue-600 transition" href="/sitemap.xml">사이트맵</a>
-</div>
-<!-- Preemptive UX Helper: Auto comma formatting & Result sharing -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Safe Auto comma formatting: ONLY touch currency/amount inputs, NEVER touch text/names
-      const moneyInputs = document.querySelectorAll('input[type="text"], input[inputmode="numeric"]');
-      moneyInputs.forEach(input => {
-        const name = (input.name || input.id || '').toLowerCase();
-        // Skip food names, text, names, descriptions, titles
-        if (name.includes('food') || name.includes('name') || name.includes('title') || name.includes('memo') || name.includes('desc')) {
-          return;
-        }
-        const isCurrency = name.includes('price') || name.includes('money') || name.includes('cost') || name.includes('amount') || name.includes('pay') || name.includes('wage');
-        if (!isCurrency) return;
-
-        input.addEventListener('input', function(e) {
-          let val = this.value.replace(/[^0-9]/g, '');
-          if (val) {
-            this.value = Number(val).toLocaleString('ko-KR');
-          }
-        });
-      });
-
-      // Inject Global Result Copy Function if not exists
-      window.copyResultToClipboard = function(textToCopy, customBtn) {
-        if (!textToCopy) {
-          const resEl = document.querySelector('#result, .result-box, [id*="result"], [class*="result"]');
-          textToCopy = resEl ? resEl.innerText.trim() : window.location.href;
-        }
-        navigator.clipboard.writeText(textToCopy + "\n\n👉 계산기 바로가기: " + window.location.href).then(() => {
-          showToastNotification('계산 결과가 클립보드에 복사되었습니다!');
-        }).catch(() => {
-          showToastNotification('복사되었습니다: ' + window.location.href);
-        });
-      };
-
-      function showToastNotification(msg) {
-        let toast = document.getElementById('global-ux-toast');
-        if (!toast) {
-          toast = document.createElement('div');
-          toast.id = 'global-ux-toast';
-          toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1e293b;color:#fff;padding:12px 24px;border-radius:9999px;font-size:14px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,0.2);z-index:9999;transition:all 0.3s ease;opacity:0;pointer-events:none;';
-          document.body.appendChild(toast);
-        }
-        toast.textContent = msg;
-        toast.style.opacity = '1';
-        toast.style.transform = 'translateX(-50%) translateY(0)';
-        setTimeout(() => {
-          toast.style.opacity = '0';
-          toast.style.transform = 'translateX(-50%) translateY(10px)';
-        }, 2200);
-      }
-    });
-  </script>
-<!-- Global UX Helper: Universal Result Copy & Toast -->
-<script>
-    window.showToastNotification = function(msg) {
-      let toast = document.getElementById('global-ux-toast');
-      if (!toast) {
-        toast = document.createElement('div');
-        toast.id = 'global-ux-toast';
-        toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1e293b;color:#fff;padding:12px 24px;border-radius:9999px;font-size:14px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,0.2);z-index:9999;transition:all 0.3s ease;opacity:0;pointer-events:none;';
-        document.body.appendChild(toast);
-      }
-      toast.textContent = msg;
-      toast.style.opacity = '1';
-      toast.style.transform = 'translateX(-50%) translateY(0)';
-      setTimeout(() => {
-        toast.style.opacity = '0';
-        toast.style.transform = 'translateX(-50%) translateY(10px)';
-      }, 2200);
-    };
-
-    window.copyResultToClipboard = function(customText) {
-      let textToCopy = customText;
-      if (!textToCopy) {
-        const resEl = document.querySelector('#resultBox, .result-card, #result, [id*="result"], [class*="result"], [id*="res"]');
-        textToCopy = resEl ? resEl.innerText.trim() : document.title;
-      }
-      const fullText = textToCopy + "\n\n👉 바로가기: " + window.location.href;
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(fullText).then(() => {
-          window.showToastNotification('결과가 클립보드에 복사되었습니다! 🎉');
-        }).catch(() => fallbackCopy(fullText));
-      } else {
-        fallbackCopy(fullText);
-      }
-    };
-
-    function fallbackCopy(text) {
-      const ta = document.createElement('textarea');
-      ta.value = text;
-      ta.style.position = 'fixed';
-      ta.style.left = '-9999px';
-      document.body.appendChild(ta);
-      ta.focus();
-      ta.select();
-      try {
-        document.execCommand('copy');
-        window.showToastNotification('결과가 클립보드에 복사되었습니다! 🎉');
-      } catch (e) {
-        window.showToastNotification('복사에 실패했습니다.');
-      }
-      document.body.removeChild(ta);
-    }
-  </script>
-
-    <!-- E-E-A-T FAQ Section (16-5 헌법 준수) -->
-    <section class="mt-8 mb-8 space-y-3">
-      <h2 class="text-xl font-bold text-gray-900 mb-4">자주 묻는 질문 (FAQ)</h2>
-      <details class="bg-gray-50 p-4 rounded-xl border border-gray-200 group">
-        <summary class="font-bold text-gray-800 cursor-pointer list-none flex justify-between items-center">
-          <span>입력한 데이터가 외부 서버에 저장되나요?</span>
-          <span class="text-blue-600 group-open:rotate-180 transition transform">▼</span>
-        </summary>
-        <p class="mt-3 text-gray-600 text-xs leading-relaxed">
-          아닙니다. 100% 사용자의 기기 브라우저 메모리 내에서만 연산되며, 어떠한 금융/개인 데이터도 외부로 전송되지 않습니다.
-        </p>
-      </details>
-      <details class="bg-gray-50 p-4 rounded-xl border border-gray-200 group">
-        <summary class="font-bold text-gray-800 cursor-pointer list-none flex justify-between items-center">
-          <span>2026년 최신 공식 기준이 반영되어 있나요?</span>
-          <summary class="text-blue-600 group-open:rotate-180 transition transform"></summary>
-        </summary>
-        <p class="mt-3 text-gray-600 text-xs leading-relaxed">
-          네, 최신 고시된 법령 및 공공 기준 요율을 상수로 반영하여 정확한 산출 결과를 제공합니다.
-        </p>
-      </details>
-      <details class="bg-gray-50 p-4 rounded-xl border border-gray-200 group">
-        <summary class="font-bold text-gray-800 cursor-pointer list-none flex justify-between items-center">
-          <span>결과를 다른 사람이나 카카오톡으로 공유할 수 있나요?</span>
-          <span class="text-blue-600 group-open:rotate-180 transition transform">▼</span>
-        </summary>
-        <p class="mt-3 text-gray-600 text-xs leading-relaxed">
-          '결과 복사하기' 버튼을 누르면 정돈된 요약 텍스트와 바로가기 주소가 클립보드에 자동 복사됩니다.
-        </p>
-      </details>
+      <div class="actions"><button type="button" class="btn primary" id="btn-add">➕ 냉장고에 넣기</button></div>
+      <p class="err" id="err" role="alert" hidden></p>
     </section>
 
+    <section class="card result" aria-labelledby="out-h">
+      <h2 id="out-h">2. 날짜 순으로 보기</h2>
+      <div class="counts">
+        <div class="count r"><b id="c-exp">0</b><span>날짜 지남</span></div>
+        <div class="count y"><b id="c-soon">0</b><span>오늘~3일</span></div>
+        <div class="count g"><b id="c-later">0</b><span>여유</span></div>
+      </div>
+      <p class="hint" id="empty">냉장고가 비어 있습니다. 식재료를 넣으면 날짜가 가까운 순서로 보여 드립니다.</p>
+      <ul class="items" id="items" aria-live="polite"></ul>
+      <div class="actions">
+        <button type="button" class="btn primary" id="btn-copy" disabled>📋 먼저 먹을 것 복사</button>
+        <button type="button" class="btn" id="btn-share" disabled>📤 공유하기</button>
+      </div>
+      <textarea id="copy-box" class="copy-box" readonly hidden aria-label="복사할 목록"></textarea>
+    </section>
+  </div>
+
+<!-- ADSENSE START: mid (right after the result card) -->
+<div class="ad-box ad-mid">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
+
+  <section class="card" id="waste" aria-labelledby="t-h">
+    <h2 id="t-h">3. 다 먹은 것과 버린 것</h2>
+    <p class="hint">품목을 다 먹었으면 ✓ 다 먹음, 버렸으면 🗑 버림을 누르세요. 금액은 넣어 둔 가격으로 셉니다.</p>
+    <div class="tbl-wrap">
+      <table class="tally">
+        <thead><tr><th scope="col"></th><th scope="col">이번 달</th><th scope="col">전체</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">다 먹음</th><td id="t-used-m">0개</td><td id="t-used-a">0개</td></tr>
+          <tr><th scope="row">버림</th><td id="t-toss-m">0개</td><td id="t-toss-a">0개</td></tr>
+          <tr><th scope="row">버리지 않고 먹은 비율</th><td id="t-rate-m">–</td><td id="t-rate-a">–</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="actions"><button type="button" class="btn" id="btn-clear" disabled>🗑️ 기록 지우기</button></div>
+  </section>
+
+  <section class="card" aria-labelledby="how-h">
+    <h2 id="how-h">🧮 D-Day 계산 방법</h2>
+    <ul>
+      <li>이 기기의 달력으로 오늘부터 입력한 날짜까지 남은 날 수를 셉니다. 오늘이면 <strong>D-Day</strong>, 내일이면 <strong>D-1</strong>, 어제였으면 <strong>D+1</strong>입니다.</li>
+      <li>시간대나 새벽 시간 때문에 하루가 밀리지 않도록 날짜는 기기 달력 그대로 다룹니다. 자정이 지나면 바로 다시 계산합니다.</li>
+      <li>날짜가 지난 것은 빨간색, 오늘부터 3일 안은 노란색, 그 뒤는 초록색으로 보여 줍니다.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ 자주 묻는 질문</h2>
+    <div class="faq-item"><h3>D-Day는 어떻게 계산하나요?</h3><p>이 기기의 달력으로 오늘부터 입력한 날짜까지 남은 날 수를 셉니다. 날짜가 오늘이면 D-Day, 지났으면 D+지난 날 수로 보여 줍니다. 자정이 지나면 바로 새 날짜로 다시 계산합니다.</p></div>
+    <div class="faq-item"><h3>날짜가 지나면 꼭 버려야 하나요?</h3><p>이 도구는 입력한 날짜만 셀 뿐, 음식이 안전한지는 알 수 없습니다. 포장지에 적힌 표시와 보관 방법을 따르고, 냄새·색·모양이 이상하거나 조금이라도 의심되면 먹지 마세요.</p></div>
+    <div class="faq-item"><h3>날짜가 적혀 있지 않은 음식은 어떻게 하나요?</h3><p>남은 반찬처럼 날짜가 없는 음식은 '오늘부터' 버튼으로 3일·7일·14일·1개월 뒤를 알림 날짜로 정할 수 있습니다. 이 날짜는 직접 정한 기준이며 안전 기한이 아닙니다.</p></div>
+    <div class="faq-item"><h3>목록은 어디에 저장되나요?</h3><p>이 브라우저에만 저장되며 서버로 보내지 않습니다. 예전에 이 페이지에 넣어 둔 목록도 그대로 이어지며, 예전 버전이 처음 열 때 자동으로 넣던 예시 품목 3개만 지웁니다. 품목의 ✕ 버튼이나 기록 지우기로 삭제할 수 있습니다.</p></div>
+    <div class="faq-item"><h3>다 먹음·버림 기록은 무엇인가요?</h3><p>품목을 다 먹었거나 버렸을 때 누르면 이번 달과 전체 기간의 개수, 넣어 둔 가격의 합계, 날짜 안에 다 먹은 비율을 보여 줍니다. 가격은 선택 입력입니다.</p></div>
+  </section>
+
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ 알아 두세요</h2>
+    <p>D-Day는 직접 입력한 날짜를 세어 보여 줄 뿐이며, 음식이 먹어도 되는지는 알려 주지 않습니다. 안전은 보관 온도와 다루는 방법에 달려 있습니다. 포장지의 표시와 보관 방법을 따르고, 의심되면 먹지 마세요.</p>
+  </section>
+</main>
+
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
+
+<footer class="footer">
+  <p>무료 냉장고 D-Day 관리 도구입니다. 목록은 이 브라우저에만 저장되며 서버로 보내지 않습니다.</p>
+  <p><a href="/privacy.html">개인정보처리방침</a> | <a href="/terms.html">이용약관</a></p>
+</footer>
+
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://fridge-dday-alarm.enjoy-onepage.com';
+  var TOOL_NAME = '자취생 냉장고 수명 알리미';
+  var ITEMS = 'fridgeItems';           /* same key and item shape as the previous version, so saved lists carry over */
+  var HIST = 'fridge.history.v1', MAX_ITEMS = 300, MAX_PRICE = 10000000;
+  var KIND = { use: '소비기한', sell: '유통기한', mine: '내가 정한 날' };
+  var CATS = ['🥦 채소/과일', '🥩 육류/생선', '🥛 유제품', '🥚 계란/두부', '🥫 소스/조미', '🍞 가공/반찬'];
+  var WDAY = '일월화수목금토';
+
+  function $(id) { return document.getElementById(id); }
+  function on(id, ev, fn) { var el = $(id); if (el) el.addEventListener(ev, fn); }
+  function val(id) { var el = $(id); return el ? String(el.value).trim() : ''; }
+  function setText(id, t) { var el = $(id); if (el) el.textContent = t; }
+  function setErr(m) { var e = $('err'); if (e) { e.textContent = m || ''; e.hidden = !m; } }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+
+  /* ---------- calendar dates as local Y-M-D only (never new Date('YYYY-MM-DD') or toISOString(), which are UTC) ---------- */
+  function dayKey(d) { return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
+  function parseKey(k) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(k || '');
+    if (!m) return null;
+    var y = +m[1], mo = +m[2], d = +m[3], dt = new Date(y, mo - 1, d);
+    return (dt.getFullYear() === y && dt.getMonth() === mo - 1 && dt.getDate() === d) ? { y: y, m: mo, d: d } : null;
+  }
+  function today() { return dayKey(new Date()); }
+  function daysUntil(k, from) {
+    var a = parseKey(from), b = parseKey(k);
+    return Math.round((Date.UTC(b.y, b.m - 1, b.d) - Date.UTC(a.y, a.m - 1, a.d)) / 86400000);
+  }
+  function addDays(k, n) { var p = parseKey(k); return dayKey(new Date(p.y, p.m - 1, p.d + n)); }
+  function addMonths(k, n) {
+    var p = parseKey(k), last = new Date(p.y, p.m - 1 + n + 1, 0).getDate();
+    return dayKey(new Date(p.y, p.m - 1 + n, Math.min(p.d, last)));
+  }
+  function niceDate(k) {
+    var p = parseKey(k), w = WDAY.charAt(new Date(p.y, p.m - 1, p.d).getDay());
+    return (p.y === new Date().getFullYear() ? '' : p.y + '년 ') + p.m + '월 ' + p.d + '일 (' + w + ')';
+  }
+  function countdown(d) {
+    if (d < 0) return { cls: 'r', badge: 'D+' + (-d), text: (-d) + '일 지남' };
+    if (d === 0) return { cls: 'y', badge: 'D-Day', text: '오늘까지' };
+    return { cls: d <= 3 ? 'y' : 'g', badge: 'D-' + d, text: d + '일 남음' };
+  }
+  function won(v) { return v.toLocaleString('ko-KR') + '원'; }
+
+  /* ---------- storage ---------- */
+  function readJSON(k, dflt) { try { var v = JSON.parse(localStorage.getItem(k)); return v === null ? dflt : v; } catch (e) { return dflt; } }
+  function writeJSON(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
+  function okPrice(p) { return p === null || p === undefined || (typeof p === 'number' && isFinite(p) && p >= 0 && p <= MAX_PRICE); }
+  function validItem(x) {
+    return x && (typeof x.id === 'number' || typeof x.id === 'string') && typeof x.name === 'string' && x.name.trim().length > 0 &&
+           x.name.length <= 200 && typeof x.category === 'string' && x.category.length <= 40 && !!parseKey(x.expiryDate) &&
+           (x.kind === undefined || !!KIND[x.kind]) && okPrice(x.price);
+  }
+  function validHist(x) { return x && (x.o === 'used' || x.o === 'tossed') && parseKey(x.on) && okPrice(x.price); }
+  function loadRaw() { var a = readJSON(ITEMS, []); return Array.isArray(a) ? a : []; }
+  function loadItems() { return loadRaw().filter(function (x) { return validItem(x) && !isSample(x); }); }
+  function loadHist() { var a = readJSON(HIST, []); return Array.isArray(a) ? a.filter(validHist) : []; }
+  /* a numeric id like the previous version's Date.now(), made unique within the saved list so two items never share one */
+  function newId(raw) {
+    var used = {}, id = Date.now();
+    raw.forEach(function (i) { if (i && (typeof i.id === 'number' || typeof i.id === 'string')) used[String(i.id)] = true; });
+    while (used[String(id)]) id += 1;
+    return id;
+  }
+  /* the previous version wrote three sample items (ids 1-3) into every new visitor's saved list. They were never the
+     visitor's own, so exactly those three are dropped, matched on id, name and category together. */
+  var SAMPLES = { '1': '서울우유 1L|🥛 유제품', '2': '찌개용 생삼겹살|🥩 육류/생선', '3': '유기농 양배추|🥦 채소/과일' };
+  function isSample(x) { return !!x && typeof x.id === 'number' && SAMPLES[String(x.id)] === x.name + '|' + x.category; }
+  function dropOldSamples() {
+    var raw = loadRaw(), kept = raw.filter(function (x) { return !isSample(x); });
+    if (kept.length !== raw.length) writeJSON(ITEMS, kept);
+  }
+  function sorted(items) {
+    return items.slice().sort(function (a, b) { return a.expiryDate < b.expiryDate ? -1 : (a.expiryDate > b.expiryDate ? 1 : a.name.localeCompare(b.name)); });
+  }
+  function kindOf(x) { return KIND[x.kind] ? x.kind : 'use'; }
+  function priceOf(x) { return typeof x.price === 'number' ? x.price : null; }
+
+  /* ---------- render list, counts and tally ---------- */
+  function renderList() {
+    var items = sorted(loadItems()), t = today(), ul = $('items'), c = { r: 0, y: 0, g: 0 };
+    if (ul) ul.textContent = '';
+    items.forEach(function (x) {
+      var d = daysUntil(x.expiryDate, t), cd = countdown(d);
+      c[cd.cls] += 1;
+      if (!ul) return;
+      var li = document.createElement('li'); li.setAttribute('data-id', String(x.id)); li.setAttribute('data-days', String(d));
+      var info = document.createElement('div');
+      var nm = document.createElement('span'); nm.className = 'nm'; nm.textContent = x.name; info.appendChild(nm);
+      var bd = document.createElement('span'); bd.className = 'badge ' + cd.cls; bd.textContent = cd.badge; info.appendChild(bd);
+      var meta = document.createElement('span'); meta.className = 'meta';
+      var p = priceOf(x);
+      meta.textContent = x.category + ' · ' + KIND[kindOf(x)] + ' ' + niceDate(x.expiryDate) + ' · ' + cd.text + (p !== null ? ' · ' + won(p) : '');
+      info.appendChild(meta);
+      var btns = document.createElement('div'); btns.className = 'btns';
+      [['used', '✓ 다 먹음'], ['tossed', '🗑 버림'], ['remove', '✕']].forEach(function (b) {
+        var bt = document.createElement('button'); bt.type = 'button'; bt.className = 'btn sm'; bt.textContent = b[1];
+        bt.setAttribute('data-act', b[0]);
+        bt.setAttribute('aria-label', x.name + ' ' + (b[0] === 'used' ? '다 먹음으로 표시' : b[0] === 'tossed' ? '버림으로 표시' : '목록에서 삭제'));
+        btns.appendChild(bt);
+      });
+      li.appendChild(info); li.appendChild(btns); ul.appendChild(li);
+    });
+    setText('c-exp', String(c.r)); setText('c-soon', String(c.y)); setText('c-later', String(c.g));
+    var em = $('empty'); if (em) em.hidden = items.length > 0;
+    ['btn-copy', 'btn-share'].forEach(function (id) { var b = $(id); if (b) b.disabled = !items.length; });
+    var cb = $('copy-box'); if (cb) cb.hidden = true;
+  }
+  function renderTally() {
+    var h = loadHist(), month = today().slice(0, 7), s = { m: { used: 0, tossed: 0, uv: 0, tv: 0 }, a: { used: 0, tossed: 0, uv: 0, tv: 0 } };
+    h.forEach(function (x) {
+      [x.on.slice(0, 7) === month ? 'm' : null, 'a'].forEach(function (k) {
+        if (!k) return;
+        s[k][x.o] += 1;
+        if (typeof x.price === 'number') s[k][x.o === 'used' ? 'uv' : 'tv'] += x.price;
+      });
+    });
+    ['m', 'a'].forEach(function (k) {
+      var r = s[k], n = r.used + r.tossed;
+      setText('t-used-' + k, r.used + '개' + (r.uv ? ' (' + won(r.uv) + ')' : ''));
+      setText('t-toss-' + k, r.tossed + '개' + (r.tv ? ' (' + won(r.tv) + ')' : ''));
+      setText('t-rate-' + k, n ? Math.round(100 * r.used / n) + '%' : '–');
+    });
+    var clr = $('btn-clear'); if (clr) clr.disabled = !h.length;
+  }
+  var shownDay = '';
+  function renderAll() { shownDay = today(); renderList(); renderTally(); }
+
+  /* ---------- add / act ---------- */
+  function readForm() {
+    var p = val('price');
+    return { name: val('name'), category: CATS.indexOf(val('cat')) >= 0 ? val('cat') : CATS[0], kind: KIND[val('kind')] ? val('kind') : 'use',
+             date: val('date'), price: p === '' ? null : Number(p) };
+  }
+  function validate(f) {
+    if (!f.name) return '식재료 이름을 넣어 주세요.';
+    if (f.name.length > 60) return '이름은 60자 이내로 넣어 주세요.';
+    if (!f.date) return '날짜를 고르거나 오늘부터 버튼을 눌러 주세요.';
+    var p = parseKey(f.date);
+    if (!p || p.y < 2000 || p.y > 2100) return '2000년부터 2100년 사이의 올바른 날짜를 골라 주세요.';
+    if (f.price !== null && (!okPrice(f.price) || !Number.isInteger(f.price))) return '가격은 0원부터 10,000,000원까지 정수로 넣어 주세요.';
+    if (loadItems().length >= MAX_ITEMS) return '목록이 가득 찼습니다(300개). 먼저 몇 개를 지워 주세요.';
+    return '';
+  }
+  function add() {
+    var f = readForm(), msg = validate(f);
+    setErr(msg);
+    if (msg) { var n = $('name'); if (n && !f.name) n.focus(); return; }
+    var items = loadRaw();
+    items.push({ id: newId(items), name: f.name, category: f.category, expiryDate: f.date, kind: f.kind, price: f.price });
+    if (!writeJSON(ITEMS, items)) { setErr('저장하지 못했습니다. 브라우저가 저장을 막고 있을 수 있습니다.'); return; }
+    var cd = countdown(daysUntil(f.date, today()));
+    showToastNotification('넣었습니다: ' + f.name + ' · ' + cd.badge);
+    ['name', 'price'].forEach(function (id) { var el = $(id); if (el) el.value = ''; });
+    renderAll();
+  }
+  function act(id, what) {
+    var raw = loadRaw(), x = null;
+    raw.forEach(function (i) { if (!x && validItem(i) && String(i.id) === id) x = i; });
+    if (!x) return;
+    if (!writeJSON(ITEMS, raw.filter(function (i) { return i !== x; }))) { showToastNotification('저장하지 못했습니다. 브라우저가 저장을 막고 있을 수 있습니다.'); return; }
+    if (what !== 'remove') {
+      var h = loadHist();
+      h.push({ name: x.name, price: priceOf(x), o: what, on: today() });
+      if (!writeJSON(HIST, h.slice(-2000))) showToastNotification('목록에서는 지웠지만 기록은 저장하지 못했습니다: ' + x.name);
+      else showToastNotification(what === 'used' ? '다 먹음으로 기록했습니다: ' + x.name : '버림으로 기록했습니다: ' + x.name);
+    } else {
+      showToastNotification('목록에서 지웠습니다: ' + x.name);
+    }
+    renderAll();
+  }
+  function plus(v) {
+    var t = today(), d = v === 'm1' ? addMonths(t, 1) : addDays(t, parseInt(v, 10));
+    var el = $('date'); if (el) el.value = d;
+    var k = $('kind'); if (k) k.value = 'mine';
+    showToastNotification('알림 날짜: ' + niceDate(d));
+  }
+
+  /* ---------- clear history: two presses within 5 s, no dialog ---------- */
+  var armTimer = null;
+  function disarm() { var b = $('btn-clear'); if (b) { b.classList.remove('armed'); b.textContent = '🗑️ 기록 지우기'; } clearTimeout(armTimer); armTimer = null; }
+  function clearHistory() {
+    var b = $('btn-clear'); if (!b) return;
+    if (!armTimer) { b.classList.add('armed'); b.textContent = '한 번 더 누르면 기록 삭제'; armTimer = setTimeout(disarm, 5000); return; }
+    disarm();
+    var ok = true;
+    try { localStorage.removeItem(HIST); } catch (e) { ok = false; }
+    renderTally();
+    showToastNotification(ok ? '다 먹음·버림 기록을 지웠습니다. 식재료 목록은 그대로입니다.' : '기록을 지우지 못했습니다. 브라우저가 저장을 막고 있을 수 있습니다.');
+  }
+
+  /* ---------- toast · copy · share (Web Share -> clipboard -> visible text to copy by hand) ---------- */
+  var toastTimer = null;
+  function showToastNotification(m) {
+    var el = $('global-ux-toast'); if (!el) return;
+    el.textContent = m; el.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2200);
+  }
+  var COPIED = '복사했습니다. 원하는 곳에 붙여 넣으세요.';
+  function copyFailed(text) {
+    var b = $('copy-box');
+    if (b) { b.value = text; b.hidden = false; b.focus(); b.select(); }
+    showToastNotification('복사하지 못했습니다. 아래 글을 직접 선택해 복사해 주세요.');
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    if (ok) showToastNotification(COPIED); else copyFailed(text);
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { showToastNotification(COPIED); }, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+  function summary() {
+    /* items whose date has passed are NOT listed as "eat first": for 소비기한 that would suggest eating food past its date */
+    var t = today(), all = sorted(loadItems()).map(function (x) { return { x: x, d: daysUntil(x.expiryDate, t) }; });
+    var soon = all.filter(function (e) { return e.d >= 0 && e.d <= 7; }), past = all.filter(function (e) { return e.d < 0; });
+    function line(e) { return '• ' + e.x.name + ': ' + countdown(e.d).badge + ' (' + KIND[kindOf(e.x)] + ' ' + niceDate(e.x.expiryDate) + ')'; }
+    function block(list) {
+      list.slice(0, 10).forEach(function (e) { lines.push(line(e)); });
+      if (list.length > 10) lines.push('…외 ' + (list.length - 10) + '개');
+    }
+    var lines = ['🥬 먼저 먹을 것 (' + niceDate(t) + ' 기준)'];
+    if (!soon.length) lines.push('7일 안에 날짜가 오는 식재료가 없습니다.' + (past.length ? '' : ' 🎉'));
+    block(soon);
+    if (past.length) { lines.push('⚠️ 날짜가 지난 것'); block(past); }
+    lines.push('👉 ' + TOOL_NAME + ': ' + SITE + '/');
+    return lines.join('\n');
+  }
+
+  /* ---------- events ---------- */
+  on('btn-add', 'click', add);
+  /* an Enter that only finishes Korean IME composition must not add (some browsers would add the item twice) */
+  on('name', 'keydown', function (e) { if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) add(); });
+  on('add', 'click', function (e) { var b = e.target && e.target.closest ? e.target.closest('button[data-plus]') : null; if (b) plus(b.getAttribute('data-plus')); });
+  on('items', 'click', function (e) {
+    var b = e.target && e.target.closest ? e.target.closest('button[data-act]') : null;
+    if (!b) return;
+    var li = b.closest('li'); if (li) act(li.getAttribute('data-id'), b.getAttribute('data-act'));
+  });
+  on('btn-clear', 'click', clearHistory);
+  on('btn-copy', 'click', function () { copyText(summary()); });
+  on('btn-share', 'click', function () {
+    var text = summary();
+    if (navigator.share) { navigator.share({ title: TOOL_NAME, text: text, url: SITE + '/' }).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(text); }); }
+    else { copyText(text); }
+  });
+  /* the day can change while the page is open: re-count at the next check after midnight or when the tab comes back */
+  document.addEventListener('visibilitychange', function () { if (!document.hidden && today() !== shownDay) renderAll(); });
+  setInterval(function () { if (today() !== shownDay) renderAll(); }, 30000);
+
+  (function init() {
+    dropOldSamples();
+    var dt = $('date'); if (dt) dt.value = addDays(today(), 5);
+    renderAll();
+  })();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>

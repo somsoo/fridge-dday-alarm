@@ -1,46 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기</title>
-    <link>https://fridge-dday-alarm.enjoy-onepage.com/</link>
-    <description>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기 실시간 온라인 도구 및 팩트 기반 전문 칼럼 피드</description>
-    <language>ko-KR</language>
-    <lastBuildDate>Sat, 12 Sep 2026 03:00:00 +0900</lastBuildDate>
-    <atom:link href="https://fridge-dday-alarm.enjoy-onepage.com/rss.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기</title>
-      <link>https://fridge-dday-alarm.enjoy-onepage.com/</link>
-      <guid isPermaLink="true">https://fridge-dday-alarm.enjoy-onepage.com/</guid>
-      <description>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기 실시간 온라인 무료 도구 및 시뮬레이터</description>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기 서비스 소개 및 산출 공식 안내</title>
-      <link>https://fridge-dday-alarm.enjoy-onepage.com/about.html</link>
-      <guid isPermaLink="true">https://fridge-dday-alarm.enjoy-onepage.com/about.html</guid>
-      <description>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기의 데이터 처리 원칙, 공식 산출 로직 및 검증 기준입니다.</description>
-      <pubDate>Sat, 12 Sep 2026 01:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기 개인정보처리방침</title>
-      <link>https://fridge-dday-alarm.enjoy-onepage.com/privacy.html</link>
-      <guid isPermaLink="true">https://fridge-dday-alarm.enjoy-onepage.com/privacy.html</guid>
-      <description>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기의 개인정보 보호 및 100% 브라우저 메모리 로컬 연산 보안 정책입니다.</description>
-      <pubDate>Sat, 12 Sep 2026 01:10:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>유통기한 vs 소비기한 완벽 비교: 식약처 권장 안전 섭취 기한 기준표 | 자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기</title>
-      <link>https://fridge-dday-alarm.enjoy-onepage.com/guides/guide1.html</link>
-      <guid isPermaLink="true">https://fridge-dday-alarm.enjoy-onepage.com/guides/guide1.html</guid>
-      <description>판매자 중심의 유통기한에서 소비자 중심의 소비기한(안전계수 80~90%) 전환에 따른 올바른 식재료 보관법입니다.</description>
-      <pubDate>Sat, 12 Sep 2026 02:15:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>냉장고 칸별 적정 보관 온도와 교차 오염 방지 수납 가이드 | 자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기</title>
-      <link>https://fridge-dday-alarm.enjoy-onepage.com/guides/guide2.html</link>
-      <guid isPermaLink="true">https://fridge-dday-alarm.enjoy-onepage.com/guides/guide2.html</guid>
-      <description>냉기 순환 원리에 따른 신선칸, 문쪽, 냉동실 층별 보관 법칙과 육류 핏물 낙하 방지 배치입니다.</description>
-      <pubDate>Sat, 12 Sep 2026 02:30:00 +0900</pubDate>
-    </item>
-  </channel>
+<channel>
+  <title>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기</title>
+  <link>https://fridge-dday-alarm.enjoy-onepage.com/</link>
+  <description>냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다. 지난 것·3일 안·여유를 나눠 보고, 다 먹은 것과 버린 것을 기록합니다. 기기 안에만 저장, 무료.</description>
+  <language>ko-kr</language>
+  <atom:link href="https://fridge-dday-alarm.enjoy-onepage.com/rss.xml" rel="self" type="application/rss+xml" />
+  <lastBuildDate>Wed, 30 Sep 2026 05:07:26 GMT</lastBuildDate>
+  <item>
+    <title>이용약관 | 자취생 냉장고 수명 알리미</title>
+    <link>https://fridge-dday-alarm.enjoy-onepage.com/terms.html</link>
+    <guid isPermaLink="true">https://fridge-dday-alarm.enjoy-onepage.com/terms.html</guid>
+    <description>자취생 냉장고 수명 알리미의 이용약관입니다.</description>
+    <pubDate>Wed, 30 Sep 2026 05:07:26 GMT</pubDate>
+  </item>
+  <item>
+    <title>개인정보처리방침 | 자취생 냉장고 수명 알리미</title>
+    <link>https://fridge-dday-alarm.enjoy-onepage.com/privacy.html</link>
+    <guid isPermaLink="true">https://fridge-dday-alarm.enjoy-onepage.com/privacy.html</guid>
+    <description>자취생 냉장고 수명 알리미의 개인정보처리방침입니다.</description>
+    <pubDate>Wed, 30 Sep 2026 05:07:26 GMT</pubDate>
+  </item>
+</channel>
 </rss>
