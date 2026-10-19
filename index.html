@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기</title>
-<meta name="description" content="냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다. 지난 것·3일 안·여유를 나눠 보고, 다 먹은 것과 버린 것을 기록합니다. 기기 안에만 저장, 무료.">
+<title>자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한</title>
+<meta name="description" content="냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://fridge-dday-alarm.enjoy-onepage.com/">
 <meta name="theme-color" content="#059669">
@@ -13,13 +13,13 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="자취생 냉장고 수명 알리미">
-<meta property="og:title" content="자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기">
-<meta property="og:description" content="냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다. 지난 것·3일 안·여유를 나눠 보고, 다 먹은 것과 버린 것을 기록합니다. 기기 안에만 저장, 무료.">
+<meta property="og:title" content="자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한">
+<meta property="og:description" content="냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다.">
 <meta property="og:url" content="https://fridge-dday-alarm.enjoy-onepage.com/">
 <meta property="og:image" content="https://fridge-dday-alarm.enjoy-onepage.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한 D-Day 관리기">
-<meta name="twitter:description" content="냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다. 지난 것·3일 안·여유를 나눠 보고, 다 먹은 것과 버린 것을 기록합니다. 기기 안에만 저장, 무료.">
+<meta name="twitter:title" content="자취생 냉장고 수명 알리미 | 식재료 소비기한·유통기한">
+<meta name="twitter:description" content="냉장고 식재료를 날짜와 함께 적어 두면 D-Day 순으로 먼저 먹을 것을 보여 줍니다.">
 <meta name="twitter:image" content="https://fridge-dday-alarm.enjoy-onepage.com/og-image.png">
 <link rel="alternate" type="application/rss+xml" title="자취생 냉장고 수명 알리미 RSS" href="https://fridge-dday-alarm.enjoy-onepage.com/rss.xml">
 <link rel="sitemap" type="application/xml" href="https://fridge-dday-alarm.enjoy-onepage.com/sitemap.xml">
@@ -112,6 +112,25 @@ input[type=text],input[type=number],input[type=date],select,textarea{width:100%;
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#12261c;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
 .toast.show{opacity:1}
 @media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
+<script id="math-guard">
+// Global Math & DOM Output Guard: prevents NaN / Infinity leaks to UI
+(function() {
+  const origToLocaleString = Number.prototype.toLocaleString;
+  Number.prototype.toLocaleString = function(locales, options) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToLocaleString.call(this, locales, options);
+  };
+  const origToFixed = Number.prototype.toFixed;
+  Number.prototype.toFixed = function(digits) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToFixed.call(this, digits);
+  };
+})();
+</script>
+<style id="ad-cls-shield">
+  .ad-bottom { min-height: 280px !important; }
+  .ad-bottom ins { min-height: 280px !important; }
 </style>
 </head>
 <body>
